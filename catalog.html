@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КНАКІ КІТСНЕН - Каталог</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Стили для скрытого заголовка */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip-path: inset(50%);
+            border: 0;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="category" id="filter-new" class="category-filter" checked>
+    <input type="radio" name="category" id="filter-kitchen" class="category-filter">
+    <input type="radio" name="category" id="filter-dining" class="category-filter">
+    <input type="radio" name="category" id="filter-sale" class="category-filter">
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-placeholder"></div>
+                <a href="index.html" class="logo">КНАКІ КІТСНЕN</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="cart.html">Заказ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="filters">
+        <div class="container">
+            <!-- Добавлен скрытый заголовок для валидации -->
+            <h2 class="visually-hidden">Фильтры товаров по категориям</h2>
+            <div class="filter-buttons">
+                <label for="filter-new" class="filter-label active">
+                    <span class="filter-image filter-novinki"></span>
+                    <span class="filter-name">Новинки</span>
+                </label>
+
+                <label for="filter-kitchen" class="filter-label">
+                    <span class="filter-image filter-kuhnya"></span>
+                    <span class="filter-name">Кухня</span>
+                </label>
+
+                <label for="filter-dining" class="filter-label">
+                    <span class="filter-image filter-stolovaya"></span>
+                    <span class="filter-name">Столовая</span>
+                </label>
+
+                <label for="filter-sale" class="filter-label">
+                    <span class="filter-image filter-skidki"></span>
+                    <span class="filter-name">Скидки</span>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h1 class="catalog-title">Каталог</h1>
+
+        <div class="container products-container">
+            <div class="products-grid">
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka1"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <a href="product.html" class="product-link">
+                                <p class="product-price">999р</p>
+                                <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                            </a>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka2"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">999р</p>
+                            <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka3"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">999р</p>
+                            <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card kitchen" data-category="kitchen">
+                    <div class="product-image product-kastryulya"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">2999р</p>
+                            <h3 class="product-name">Кастрюля, 24 см, алюминий</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka4"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">999р</p>
+                            <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka5"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">999р</p>
+                            <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card kitchen" data-category="kitchen">
+                    <div class="product-image product-skovoroda"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">1999р</p>
+                            <h3 class="product-name">Сковорода, 24 см, алюминий</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card sale" data-category="sale">
+                    <div class="product-image product-chashka"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">499р</p>
+                            <h3 class="product-name">Чашка, 300 мл, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card new dining" data-category="new dining">
+                    <div class="product-image product-tarelka6"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">999р</p>
+                            <h3 class="product-name">Тарелка, 26 см, керамика</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card dining" data-category="dining">
+                    <div class="product-image product-tarelka1"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">1299р</p>
+                            <h3 class="product-name">Столовые приборы, 24 шт</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card dining" data-category="dining">
+                    <div class="product-image product-tarelka2"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">899р</p>
+                            <h3 class="product-name">Столовые приборы, 12 шт</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="product-card dining" data-category="dining">
+                    <div class="product-image product-tarelka3"></div>
+                    <div class="product-info">
+                        <div class="product-details">
+                            <p class="product-price">799р</p>
+                            <h3 class="product-name">Салатники, набор 3 шт</h3>
+                        </div>
+                        <label class="cart-container">
+                            <input type="checkbox" class="cart-checkbox">
+                            <span class="cart-btn"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="copyright">© КНАКІ КІТСНЕN, 2025</div>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-info">
+                        <p>Контакты</p>
+                        <p>8 933 393 93 39</p>
+                        <p>khaki.kitchen@mail.ru</p>
+                        <div class="social-links">
+                            <a href="https://t.me/khaki_kitchen" class="social-link telegram" target="_blank"></a>
+                            <a href="https://vk.com/khaki_kitchen" class="social-link vkontakte" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

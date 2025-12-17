@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КНАКІ КІТСНЕН - Оформление заказа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-placeholder"></div>
+                <a href="index.html" class="logo-link">КНАКІ КІТСНЕN</a>
+                <ul class="nav-links">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="cart.html" class="active">Заказ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="order-page">
+        <div class="container">
+            <h1 class="page-title mb-5">Оформление заказа</h1>
+            
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="product-card">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="product-image">
+                                    <img src="images/products/tarelka-cart.png" alt="Тарелка, 26 см, керамика">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="product-name mb-3">Тарелка, 26 см, керамика</div>
+                                <div class="product-price mb-4">999p</div>
+                                
+                                <div class="d-flex align-items-center quantity-control">
+                                    <button type="button" class="btn minus">
+                                        -
+                                    </button>
+                                    <div class="d-flex align-items-center mx-3">
+                                        <span class="quantity-value">1</span>
+                                        <span class="quantity-text ms-2">шт</span>
+                                    </div>
+                                    <button type="button" class="btn plus">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="summary-card mb-4">
+                        <div class="summary-title">Итоги заказа</div>
+                        
+                        <div class="d-flex justify-content-between summary-item">
+                            <span>Кол-во товара</span>
+                            <span id="total-items">1</span>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between summary-item">
+                            <span>Сумма</span>
+                            <span id="subtotal">999p</span>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between summary-item total">
+                            <span>Итого</span>
+                            <span id="total-price">999p</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="contact-title">Контактная информация</div>
+                        
+                        <form id="order-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="Имя" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="surname" placeholder="Фамилия">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Почта" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="Телефон" required>
+                            </div>
+                            
+                            <div class="payment-title">Оплата:</div>
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-4">
+                                    <div class="payment-option active">
+                                        <img src="images/payment/sbp.png" alt="СБП" class="payment-image">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="payment-option">
+                                        <img src="images/payment/sber.png" alt="Картой" class="payment-image">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="payment-option">
+                                        <img src="images/payment/t.png" alt="Наличные" class="payment-image">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn submit-btn">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="copyright">© КНАКІ КІТСНЕN, 2025</div>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-info">
+                        <p>Контакты</p>
+                        <p>8 933 393 93 39</p>
+                        <p>khaki.kitchen@mail.ru</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/khaki_kitchen" target="_blank" class="social-link telegram">
+                            <img src="images/telegram.png" alt="Telegram">
+                        </a>
+                        <a href="https://vk.com/khaki_kitchen" target="_blank" class="social-link vkontakte">
+                            <img src="images/vkontakte.png" alt="VKontakte">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

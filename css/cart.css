@@ -1,0 +1,324 @@
+body {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: #fff;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 17%;
+}
+
+.btn,
+.form-control,
+.nav-link,
+.navbar-toggler,
+.card,
+.dropdown-menu,
+.modal-content,
+.alert,
+.badge,
+.progress,
+.list-group-item {
+    border-radius: 0 !important;
+}
+
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-placeholder {
+    width: 100px;
+}
+
+.logo {
+    font-family: 'Cormorant-Light', Arial;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-link {
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    text-decoration: underline;
+}
+
+.nav-links a:active {
+    color: #666;
+}
+
+.order-page {
+    padding: 60px 0;
+    background: #fff;
+    font-size: 18px;
+}
+
+.page-title {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    background: #fff;
+    font-size: 18px;
+}
+
+.product-image {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-name {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.product-price {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.quantity-control .btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    font-size: 24px;
+    color: #000;
+    padding: 0;
+    font-family: 'Brygada 1918 SemiBold', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.quantity-control .btn:hover {
+    background: #f5f5f5;
+    border-color: #000;
+}
+
+.quantity-value {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+    min-width: 40px;
+    text-align: center;
+}
+
+.quantity-text {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.summary-card {
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    background: #fff;
+    font-size: 18px;
+}
+
+.summary-title,
+.contact-title {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-item {
+    padding: 15px 0;
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.summary-item.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: none;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    font-family: 'Brygada 1918 Regular', serif;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.payment-title {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    color: #000;
+    margin: 25px 0 15px;
+}
+
+.payment-option {
+    height: 70px;
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.payment-option.active {
+    border-color: #000;
+    background: #f5f5f5;
+}
+
+.payment-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.submit-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    padding: 18px;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.footer {
+    background: #fafafa;
+    color: #000;
+    padding: 60px 0 30px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 60px;
+    font-size: 18px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.copyright {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+}
+
+.contact-info {
+    font-family: 'Brygada 1918 SemiBold', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.social-link {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.social-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.social-link:hover {
+    opacity: 0.7;
+}

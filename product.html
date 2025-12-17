@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КНАКІ KITCHEN - Тарелка</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-placeholder"></div>
+                <a href="index.html" class="logo-link">КНАКІ КІТСНЕN</a>
+                <ul class="nav-links">
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="cart.html">Заказ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        <div class="container product-container">
+            <div class="product-slider-section">
+                <div class="css-slider">
+                    <div class="slider-container">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        
+                        <div class="slides">
+                            <div class="slide" id="slide-1">
+                                <img src="images/products/tarelka-angle1.png" alt="Тарелка, вид спереди">
+                            </div>
+                            <div class="slide" id="slide-2">
+                                <img src="images/products/tarelka-angle2.png" alt="Тарелка, вид сбоку">
+                            </div>
+                            <div class="slide" id="slide-3">
+                                <img src="images/products/tarelka-angle3.png" alt="Тарелка, вид сверху">
+                            </div>
+                            <div class="slide" id="slide-4">
+                                <img src="images/products/tarelka-angle4.png" alt="Тарелка в интерьере">
+                            </div>
+                        </div>
+                        
+                        <div class="nav-arrows">
+                            <label for="slide4" class="prev-arrow arrow-1">
+                                <span class="arrow-icon">←</span>
+                            </label>
+                            <label for="slide1" class="prev-arrow arrow-2">
+                                <span class="arrow-icon">←</span>
+                            </label>
+                            <label for="slide2" class="prev-arrow arrow-3">
+                                <span class="arrow-icon">←</span>
+                            </label>
+                            <label for="slide3" class="prev-arrow arrow-4">
+                                <span class="arrow-icon">←</span>
+                            </label>
+                            
+                            <label for="slide2" class="next-arrow arrow-1">
+                                <span class="arrow-icon">→</span>
+                            </label>
+                            <label for="slide3" class="next-arrow arrow-2">
+                                <span class="arrow-icon">→</span>
+                            </label>
+                            <label for="slide4" class="next-arrow arrow-3">
+                                <span class="arrow-icon">→</span>
+                            </label>
+                            <label for="slide1" class="next-arrow arrow-4">
+                                <span class="arrow-icon">→</span>
+                            </label>
+                        </div>
+                        
+                        <div class="nav-dots">
+                            <label for="slide1" class="dot"></label>
+                            <label for="slide2" class="dot"></label>
+                            <label for="slide3" class="dot"></label>
+                            <label for="slide4" class="dot"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info-section">
+                <h1 class="product-title">Тарелка, 26 см, керамика</h1>
+                
+                <div class="product-description">
+                    <p>Тарелка закусочная. Размер: 21 см. Материал стекло. Не подходит для использования в микроволновой печи. Рекомендуется мыть вручную с применением мягких моющих средств. Не использовать для ухода абразивные чистящие средства и жесткие губки. Нельзя мыть в посудомоечной машине.</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="product-actions">
+                    <div class="price-section">
+                        <span class="product-price">999р</span>
+                        
+                        <div class="quantity-control">
+                            <div class="quantity-wrapper">
+                                <button class="btn minus">
+                                    -
+                                </button>
+                                <div class="quantity-display">
+                                    <span class="quantity-value">1</span>
+                                    <span class="quantity-text">шт</span>
+                                </div>
+                                <button class="btn plus">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-toggle">
+                        <input type="checkbox" id="cart-toggle" class="cart-checkbox">
+                        <label for="cart-toggle" class="add-to-cart-btn">
+                            <span class="btn-text-default">Добавить в заказ</span>
+                            <span class="btn-text-added">Добавлено</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="copyright">© КНАКІ КІТСНЕN, 2025</div>
+                </div>
+                <div class="footer-right">
+                    <div class="contact-info">
+                        <p>Контакты</p>
+                        <p>8 933 393 93 39</p>
+                        <p>khaki.kitchen@mail.ru</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://t.me/khaki_kitchen" class="social-link telegram" target="_blank"></a>
+                        <a href="https://vk.com/khaki_kitchen" class="social-link vkontakte" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
